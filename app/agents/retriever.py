@@ -12,8 +12,8 @@ embedding_model = SentenceTransformer(EMBEDDING_MODEL)
 def load_processed_data():
     csv_path = os.path.join(PROCESSED_DATA_DIR, "resumes_cleaned.csv")
     embed_path = os.path.join(PROCESSED_DATA_DIR, "resume_embeddings.npy")
-    df = pd.read_csv(csv_path)
-    embeddings = np.load(embed_path)
+    df = pd.read_csv("data/candidates.csv")
+    embeddings = np.load("data/generate_embeddings.py")
     return df, embeddings
 
 
