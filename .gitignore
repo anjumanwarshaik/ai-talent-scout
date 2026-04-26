@@ -1,0 +1,8 @@
+﻿.env
+data/processed/
+data/raw/
+__pycache__/
+*.pyc
+*.npy
+*.csv
+.streamlit/
