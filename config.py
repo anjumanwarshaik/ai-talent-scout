@@ -10,7 +10,7 @@ PROCESSED_DATA_DIR = os.path.join(BASE_DIR, "data", "processed")
 os.makedirs(PROCESSED_DATA_DIR, exist_ok=True)
 
 # ── Gemini LLM Config ────────────────────────────────────────
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyBTfSWfer5TpgW77leebiM5SiSV0Wp9urU")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GEMINI_MODEL = "gemini-2.0-flash"    # update if needed
 
 # ── Embedding Config ─────────────────────────────────────────
